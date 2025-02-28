@@ -1,0 +1,26 @@
+#include <string>
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int solution(vector<vector<int>> dots) {
+    vector<int> a = dots[0];
+    vector<int> b = dots[1];
+    vector<int> c = dots[2];
+    vector<int> d = dots[3];
+    
+    if (double(double (a[1] - b[1]) / double (a[0] - b[0])) == 
+        double(double (c[1] - d[1]) / double (c[0] - d[0])) ||
+        double(double (a[1] - c[1]) / double (a[0] - c[0])) ==
+        double(double (b[1] - d[1]) / double (b[0] - d[0])) ||
+        double(double (b[1] - c[1]) / double (b[0] - c[0])) ==
+        double(double (a[1] - d[1]) / double (a[0] - d[0]))
+       ) {
+        int answer = 1;
+    return answer;
+    }
+    
+    int answer = 0;
+    return answer;
+}
